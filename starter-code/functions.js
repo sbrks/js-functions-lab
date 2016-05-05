@@ -80,6 +80,12 @@ var reverseString = function (arr){
 };
 
 
+
+function reverseString (string) {
+	return str.split('').reverse().join('');
+}
+
+
 // Question 7
 function findLongestWord (arr) {
 	var longest = 0;
@@ -90,11 +96,22 @@ function findLongestWord (arr) {
 	}
 }
 
+
+var longWords = ["Sam", "Joe", "Harry", "Penelope"];
+var longest = longWord[i];
+
+if (longest.length < current.length) {
+	longest = current;
+}
+
+console.log(longest)
+
+
 function findLongestWord (arr) {
-  longest = 0;
+  var longest = 0;
   for (var i = 0; i < arr.length; i++) {
-    if (arr[i].length > longest) {
-      longest = arr[i].length;
+    if (arr[i].length > longest.length) {
+      longest = arr[i];
     }
   }
   return longest;
